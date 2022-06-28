@@ -53,8 +53,9 @@ function App() {
           <span>Desenvolvido por Lara Lourenço.</span>
         </main>
       )}
-
     </div>
+
+    
   );
 }
 
