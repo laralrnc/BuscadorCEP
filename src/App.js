@@ -33,7 +33,7 @@ function App() {
       <div className="containerInput">
         <input
           type="text"
-          placeholder="Digite o CEP que deseja verificar"
+          placeholder="Digite o CEP"
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
