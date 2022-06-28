@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import './styles.css';
 import api from './services/api';
+import Navbar from './navbar';
 
 function App() {
 
@@ -27,33 +28,34 @@ function App() {
   }
 
   return (
-    <div className="container">
-      <h1 className="title">Buscador CEP</h1>
 
-      <div className="containerInput">
-        <input
-          type="text"
-          placeholder="Digite o CEP"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-        />
+    <><div>
+          <Navbar />
+      </div><div className="container">
+              <h1 className="title">Buscador CEP</h1>
 
-        <button className='buttonSearch' onClick={handleSearch}>
-          <FiSearch size={25} color='#FFF' />
-        </button>
-      </div>
+              <div className="containerInput">
+                  <input
+                      type="text"
+                      placeholder="Digite o CEP"
+                      value={input}
+                      onChange={(e) => setInput(e.target.value)} />
 
-      {Object.keys(cep).length > 0 && (
-        <main className='main'>
-          <h2>CEP: {cep.cep}</h2>
-          <span>Logradouro: {cep.logradouro}</span>
-          <span> Bairro: {cep.bairro}</span>
-          <span>{cep.localidade} - {cep.uf}</span>
-          <span>Obrigada por utilizar!</span>
-          <span>Desenvolvido por Lara Lourenço.</span>
-        </main>
-      )}
-    </div>
+                  <button className='buttonSearch' onClick={handleSearch}>
+                      <FiSearch size={25} color='#FFF' />
+                  </button>
+              </div>
+
+              {Object.keys(cep).length > 0 && (
+                  <main className='main'>
+                      <h2>CEP: {cep.cep}</h2>
+                      <span>Logradouro: {cep.logradouro}</span>
+                      <span> Bairro: {cep.bairro}</span>
+                      <span>{cep.localidade} - {cep.uf}</span>
+                      <span>Obrigada por utilizar!</span>
+                  </main>
+              )}
+          </div></>
 
     
   );

@@ -1,0 +1,45 @@
+.cursor{
+    cursor: pointer;
+    color: white;
+}
+.text-decorator-none{
+    text-decoration: none;
+}
+.navbar:hover {
+    color: #c6f0e1
+}
+.navbar{
+    padding: 0 50px;
+    font-size: large;
+    font-weight: 1000;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+
+
+}
+.MuiAppBar-colorPrimary {
+    background-color: #fcbf6b !important;
+}
+.box1 {
+    background-color: #fcbf6b !important;
+}
+
+.redes {
+    font-size: 40px !important;
+    color: white;
+}
+
+.textos {
+    color: white;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.grid1 {
+    display: flex table-row;
+    flex-flow: row wrap;
+}
